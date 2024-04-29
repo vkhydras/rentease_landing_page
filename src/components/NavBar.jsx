@@ -4,7 +4,7 @@ const NavBar = () => {
     const [showMenu, setShowMenu] = useState(false);
 
     return (
-        <nav className="bg-gray-800 p-4">
+        <nav className="bg-gray-800 p-4 fixed w-full top-0 z-10">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center">

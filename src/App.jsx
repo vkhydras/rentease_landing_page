@@ -1,17 +1,19 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Features from './components/Features';
 import Home from './components/Home';
-import HowItWorks from './components/HowItWorks';
-import NavBar from './components/NavBar';
+import Waitlist from './components/Waitlist';
 
 function App() {
   return (
-  <div>
-    <NavBar />
-    <Home/>
-    <Features />
-    <HowItWorks />
-  </div>
+    <Router>
+      <div>
+        <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/waitlist" element= {<Waitlist />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
