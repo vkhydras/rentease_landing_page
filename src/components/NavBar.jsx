@@ -8,7 +8,7 @@ const NavBar = () => {
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center">
-                        <span className="text-white text-lg font-bold">RentEase</span>
+                        <span className="text-white text-lg font-bold"><a href="/">ReEase</a></span>
                     </div>
                     <div className="hidden md:flex space-x-4">
                         <a href="#features" className="text-white hover:text-gray-300">Features</a>
