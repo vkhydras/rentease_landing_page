@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FiMenu } from 'react-icons/fi';
 
 const NavBar = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -22,7 +23,7 @@ const NavBar = () => {
                             className="text-white focus:outline-none"
                             onClick={() => setShowMenu(!showMenu)}
                         >
-                            {showMenu ? 'Close' : 'Menu'}
+                            {showMenu ? 'X' : <FiMenu />}
                         </button>
                     </div>
                 </div>
