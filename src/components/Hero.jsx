@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="bg-gray-100 min-h-screen flex items-center justify-center">
       <div className="max-w-4xl text-center">
         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
-          Simplify Property Management with RentEase
+          Simplify Property Management with ReEase
         </h1>
         <p className="mt-4 text-lg md:text-xl text-gray-700">
           A comprehensive software solution for managing buildings, tracking
