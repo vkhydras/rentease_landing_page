@@ -7,18 +7,20 @@ const Waitlist = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true); // Set loading state to true when form is submitted
     try {
-      const subscribeResponse = await fetch("http://localhost:4000/subscribe", {
+      const subscribeResponse = await fetch("https://landing-back.onrender.com/subscribe", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ email }),
       });
-      const addUserResponse = await fetch("http://localhost:4000/add", {
+      const addUserResponse = await fetch("https://landing-back.onrender.com/add", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -29,7 +31,7 @@ const Waitlist = () => {
       if (subscribeResponse.ok) {
         console.log("User subscribed successfully");
         toast.success("Thank you for subscribing!");
-        alert('Subscribe Succefuly')
+        alert('Thank for subscribing')
         setSubscribed(true);
         navigate("/");
       } else {
@@ -47,6 +49,8 @@ const Waitlist = () => {
       }
     } catch (error) {
       console.error("Failed to subscribe or add user:", error.message);
+    } finally {
+      setLoading(false); // Set loading state back to false after the request is completed
     }
   };
 
@@ -87,8 +91,9 @@ const Waitlist = () => {
               <button
                 type="submit"
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none"
+                disabled={loading} // Disable the button when loading is true
               >
-                Join Now
+                {loading ? "Loading..." : "Join Now"} {/* Show loader or button text based on loading state */}
               </button>
             </form>
             <p className="mt-4 text-sm text-gray-600">
