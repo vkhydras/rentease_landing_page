@@ -5,8 +5,8 @@ const HowItWorks = () => {
         <section id="how-it-works" className="py-12 bg-gray-200 h-screen overflow-hidden flex justify-center items-center">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="text-center">
-                    <h2 className="text-3xl font-bold text-gray-900">How RentEase Works</h2>
-                    <p className="mt-2 text-lg text-gray-700">Explore the seamless workflow of RentEase in managing properties.</p>
+                    <h2 className="text-3xl font-bold text-gray-900">How ReEase Works</h2>
+                    <p className="mt-2 text-lg text-gray-700">Explore the seamless workflow of ReEase in managing properties.</p>
                 </div>
                 <div className="mt-12 grid gap-8 lg:grid-cols-2">
                     <div className="flex items-center justify-center bg-white rounded-lg shadow-lg p-6">
@@ -24,7 +24,7 @@ const HowItWorks = () => {
                         </div> */}
                         <div>
                             <h3 className="text-xl font-bold text-gray-900 mb-2"> Tenant Management</h3>
-                            <p className="text-gray-700">Agencies manage tenant rent payment schedules within the RentEase platform.</p>
+                            <p className="text-gray-700">Agencies manage tenant rent payment schedules within the ReEase platform.</p>
                         </div>
                     </div>
                     <div className="flex items-center justify-center bg-white rounded-lg shadow-lg p-6">
@@ -33,7 +33,7 @@ const HowItWorks = () => {
                         </div> */}
                         <div>
                             <h3 className="text-xl font-bold text-gray-900 mb-2"> Rent Collection</h3>
-                            <p className="text-gray-700">RentEase automatically sends rent reminders and collects payments from tenants through various payment methods.</p>
+                            <p className="text-gray-700">ReEase automatically sends rent reminders and collects payments from tenants through various payment methods.</p>
                         </div>
                     </div>
                     <div className="flex items-center justify-center bg-white rounded-lg shadow-lg p-6">
@@ -51,7 +51,7 @@ const HowItWorks = () => {
                         </div> */}
                         <div>
                             <h3 className="text-xl font-bold text-gray-900 mb-2"> Reporting and Insights</h3>
-                            <p className="text-gray-700">RentEase generates detailed reports on rent collection, expenses, vacancies, and more, providing agencies with valuable insights for decision-making.</p>
+                            <p className="text-gray-700">ReEase generates detailed reports on rent collection, expenses, vacancies, and more, providing agencies with valuable insights for decision-making.</p>
                         </div>
                     </div>
                 </div>
