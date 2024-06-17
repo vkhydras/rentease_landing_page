@@ -14,10 +14,10 @@ const Hero = () => {
         </p>
         <button className="mt-8 px-6 py-3 bg-blue-500 text-white font-bold rounded-lg shadow-md hover:bg-blue-700 fle">
           <a
-            href="/waitlist"
+            href="https://re-ease.vercel.app/"
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none flex items-center justify-center"
           >
-            Join the Waitlist <FaArrowRight className="ml-2" />
+            View Product <FaArrowRight className="ml-2" />
           </a>
         </button>
       </div>
